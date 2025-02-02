@@ -1,11 +1,13 @@
-import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
-// import { Container } from "@/components/ui/container"
+import { NeuralBackground } from "@/components/neural-background"
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
-      {/* Background gradient effect */}
+    <main className="relative min-h-screen overflow-hidden">
+      {/* Neural network background animation */}
+      <NeuralBackground />
+
+      {/* Yellow gradient overlay */}
       <div 
         className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_120%,rgba(255,215,0,0.1),rgba(0,0,0,0))]" 
         aria-hidden="true"
