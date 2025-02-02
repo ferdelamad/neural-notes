@@ -56,4 +56,52 @@
     box-shadow: 0 0 20px theme('colors.yellow.500/0.4'),
                 0 0 30px theme('colors.yellow.500/0.4');
   }
+}
+
+@layer utilities {
+  /* Add these new animations */
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .animate-draw-line {
+    stroke: theme('colors.yellow.500');
+    stroke-width: 1;
+    opacity: 0.4;
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    animation: draw 4s ease-out infinite;
+  }
+
+  @keyframes draw {
+    0% {
+      stroke-dashoffset: 200;
+      opacity: 0.1;
+    }
+    45% {
+      stroke-dashoffset: 0;
+      opacity: 0.4;
+    }
+    85% {
+      stroke-dashoffset: 0;
+      opacity: 0.4;
+    }
+    100% {
+      stroke-dashoffset: -200;
+      opacity: 0.1;
+    }
+  }
+
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.4;
+      fill: theme('colors.yellow.500');
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      fill: theme('colors.yellow.300');
+      transform: scale(1.1);
+    }
+  }
 } 
