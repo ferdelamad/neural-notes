@@ -20,13 +20,12 @@ export default function Home() {
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
               Neural Notes
               <span className="block bg-gradient-to-r from-yellow-500 to-yellow-200 bg-clip-text text-transparent">
-                Bridging Devs and AI
+                AI Within Reach
               </span>
             </h1>
             
-            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              One Note at a Time. Stay updated with the latest in AI development, 
-              best practices, and insights delivered straight to your inbox.
+            <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl pb-6"> 
+              A thoughtfully crafted weekly newsletter for AI Enthusiasts.
             </p>
 
             {/* Newsletter card */}
@@ -36,7 +35,7 @@ export default function Home() {
                   Subscribe to the newsletter
                 </h2>
                 <p className="text-sm text-muted-foreground">
-                  Get the latest updates delivered to your inbox.
+                  Join the top AI visionaries for a weekly update.
                 </p>
                 {/* Placeholder for Beehiiv embed */}
                 <div className="rounded-md border border-dashed border-yellow-500/50 bg-muted/50">
@@ -73,15 +72,15 @@ export default function Home() {
 
 const features = [
   {
-    title: "AI Development Updates",
-    description: "Stay informed about the latest developments in AI technology and tools.",
+    title: "AI Tooling",
+    description: "Discover a trending tool or workflow that’s disrupting the AI space.",
   },
   {
-    title: "Best Practices",
-    description: "Learn about AI implementation best practices and common pitfalls to avoid.",
+    title: "Learning resources",
+    description: "Learn about improving your workflows, develop ML/AI models, and build with AI.",
   },
   {
-    title: "Developer Insights",
-    description: "Get practical insights from developers working with AI in production.",
+    title: "Highlights",
+    description: "Stay in the loop with the most relevant AI news and trends of the week.",
   },
 ] 
